@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,14 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.case {
+  margin-top: 0;
+  color: white;
+  margin-bottom: 0;
+  font-size: 9px;
+  text-align: center;
+}
+.carousel-caption {
+bottom: 70px;
 }
