@@ -41,7 +41,7 @@ function App() {
   }, []);
   const date = new Date(parseInt(allData.updated));
   const updated = date.toString();
-  console.log(allData);
+ 
   RegExp.quote = function (search) {
     return search.replace(/([.?*+^$[\]\\(){}|-])/gi, "\\$1");
   };
