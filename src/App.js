@@ -28,8 +28,8 @@ function App() {
   useEffect(() => {
     axios
       .all([
-        axios.get("https://corona.lmao.ninja/all"),
-        axios.get("https://corona.lmao.ninja/countries"),
+        axios.get("https://corona.lmao.ninja/v2/all"),
+        axios.get("https://corona.lmao.ninja/v2/countries"),
       ])
       .then((res) => {
         setAllData(res[0].data);
