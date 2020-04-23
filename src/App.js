@@ -11,6 +11,8 @@ import axios from "axios";
 import blue from "./images/cases.jpg";
 import red from "./images/Coronavirus.png";
 import green from "./images/green.jpg";
+import {ReactNavbar} from 'react-responsive-animate-navbar'
+
 import "./App.css";
 
 function App() {
@@ -59,6 +61,7 @@ function App() {
   const mapTag = allCountries.map((tag) => {
     return (
       <>
+      
         <Marker
           latitude={tag.countryInfo.lat}
           longitude={tag.countryInfo.long}
@@ -96,6 +99,15 @@ function App() {
   });
   return (
     <div>
+     <ReactNavbar 
+     color="#c73838"
+     logo="https://www.knightdesign.com.au/wp-content/uploads/2020/03/COVID-19_white.svg"
+     menu={[
+      { name: "HOME", to: "/" },
+      { name: "ARTICLES", to: "/articles" },
+      { name: "ABOUT ME", to: "/about" },
+      { name: "CONTACT", to: "/contact" },
+    ]}/>
       <Carousel>
   <Carousel.Item>
     <img
@@ -182,6 +194,7 @@ function App() {
           </ReactMapGL>
         </div>
       </Container>
+     
     </div>
   );
 }
